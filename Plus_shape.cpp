@@ -39,7 +39,7 @@ int main()
     cin >> n; // Take input from the user
 
     // Validate input: n must be a positive odd number
-    if (n <= 0 || n % 2 == 0)
+    if (n < 1 || n % 2 == 0)
     {
         cout << "Invalid input!" << endl;
         return 1; // Exit if input is invalid
@@ -56,9 +56,9 @@ int main()
 
 OUTPUT
 Enter the odd size : 5
-     *
-     *
-   ***** 
-     * 
-     * 
+  *
+  *
+***** 
+  * 
+  * 
 */
