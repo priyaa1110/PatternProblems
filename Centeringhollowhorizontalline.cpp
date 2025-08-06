@@ -62,11 +62,10 @@ Enter the length of your horizontal line : 8
 
 
 
-
                   *       *
 
 
 
-
-
+Note:
+- You can change console_width and console_height according to your terminal settings.
 */
