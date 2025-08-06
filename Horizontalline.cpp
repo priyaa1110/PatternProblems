@@ -1,3 +1,5 @@
+//Code for printing a simple horizontal line of any length using * symbol
+
 #include<iostream>
 using namespace std;
 int main()
