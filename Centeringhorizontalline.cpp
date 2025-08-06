@@ -8,6 +8,13 @@ int main()
     cout<<"Enter the length of your horizontal line : ";
     cin>>n;
 
+    //For invalid input cases
+    if(n<=0)
+    {
+        cout<<"Enter a positive number!"<<endl;
+        return 1; //Exit if input is invalid (  1 or anyother non-zero number is used for invalid cases i.e unsuccessfull cases )
+    }
+
     // Assuming standard console size (can vary on different systems)
     int console_width = 80;
     int console_height = 24;
@@ -56,4 +63,6 @@ Enter the length of your horizontal line : 8
 
 
 
-Somthing like this will come u can change the console width and height accordingly*/                        
+Note:
+- You can change console_width and console_height according to your terminal settings.
+*/                        
