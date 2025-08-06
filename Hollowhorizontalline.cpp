@@ -1,4 +1,4 @@
-//Code for printing a hollow horizontal line
+//Code for printing a hollow horizontal line using * symbol
 
 #include <iostream>
 using namespace std;
