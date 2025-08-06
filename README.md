@@ -36,5 +36,4 @@ Feel free to explore, learn, and even suggest improvements!
 
 
 
-**Priya**  
-Beginner in C++ and DSA | Passionate about Problem Solving
+
