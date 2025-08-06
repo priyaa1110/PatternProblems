@@ -6,8 +6,8 @@ int main()
     cout<<"Enter the length of your horizontal line : ";
     cin>>n;
 
-    int console_width = 20;
-    int console_height = 14;
+    int console_width = 80;
+    int console_height = 24;
      
   
     int vertical_spaces = (console_height - 1)/2;
