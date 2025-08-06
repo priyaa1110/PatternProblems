@@ -4,12 +4,12 @@ int main()
 {
     int n;
     cout<<"Enter the length of horizontal line : ";
-    cin>>n;
-    for (int i=0 ; i<n; i++)
+    cin>>n; //Takes input from the user.
+    for (int i=0 ; i<n; i++) //Loop runs n times
     {
-        cout<<"* ";
+        cout<<"* "; //Print * n times with a space
 
     }
-    cout<<endl;
+    cout<<endl; //Moves the cursor to the next line
     return 0;
 }
