@@ -1,3 +1,5 @@
+//Code for printing a hollow horizontal line
+
 #include <iostream>
 using namespace std;
 
