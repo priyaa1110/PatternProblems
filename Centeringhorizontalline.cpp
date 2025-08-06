@@ -1,6 +1,5 @@
 //##Centering a horizontal line of any length at the center of a console using * symbol with spaces##
 
-
 #include<iostream>
 using namespace std;
 int main()
@@ -43,3 +42,18 @@ int main()
     return 0;
 
 }
+
+/*OUTPUT
+Enter the length of your horizontal line : 8
+       
+
+
+
+
+                        ********
+
+
+
+
+
+Somthing like this will come u can change the console width and height accordingly*/                        
