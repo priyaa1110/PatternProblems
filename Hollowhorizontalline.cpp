@@ -12,8 +12,8 @@ int main()
     // For Invalid input cases
     if (n <= 0)
     {
-        cout << "Please enter a positive number!" << endl; //Exit if input is invalid ( 1 and anyother non-zero number is used for invalid cases i.e unsuccessfull cases )
-        return 1;
+        cout << "Please enter a positive number!" << endl; 
+        return 1; //Exit if input is invalid ( 1 and anyother non-zero number is used for invalid cases i.e unsuccessfull cases )
     }
 
     for (int i = 0; i < n; i++) // Loop runs for  n times
