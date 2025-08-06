@@ -27,10 +27,7 @@ int main()
 /*
 
 OUTPUT
-Enter the length of your vertical line : 8
-*
-*
-*
+Enter the length of your vertical line : 5
 *
 *
 *
