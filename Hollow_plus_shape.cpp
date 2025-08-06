@@ -52,16 +52,15 @@ int main()
     return 0; // Successful execution
 }
 
-
 /*
 
 OUTPUT
 Enter the odd size : 5
   *
   *
-** ** 
-  * 
-  * 
-  
+** **
+  *
+  *
+
   Note: The center is left empty to create a 'hollow' plus pattern.
 */
