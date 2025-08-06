@@ -1,4 +1,4 @@
-//##Centering a horizontal line of any length at the center of a console using * symbol with spaces##
+//Code for centering a horizontal line of any length at the center of a console using * symbol with spaces
 
 #include<iostream>
 using namespace std;
