@@ -11,5 +11,12 @@ int main()
 
     }
     cout<<endl; //Moves the cursor to the next line
+    
     return 0;
 }
+
+/*
+OUTPUT
+Enter the length of horizontal line : 7
+* * * * * * *
+*/
