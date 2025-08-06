@@ -12,7 +12,7 @@ int main()
     // For Invalid input cases
     if (n <= 0)
     {
-        cout << "Please enter a positive number!" << endl;
+        cout << "Please enter a positive number!" << endl; //Exit if input is invalid ( 1 and anyother non-zero number is used for invalid cases i.e unsuccessfull cases )
         return 1;
     }
 
