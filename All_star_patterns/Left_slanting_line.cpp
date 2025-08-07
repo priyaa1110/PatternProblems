@@ -1,3 +1,5 @@
+//Code for printing a left slanting line of any length using * symbol
+
 #include<iostream>
 using namespace std;
 
