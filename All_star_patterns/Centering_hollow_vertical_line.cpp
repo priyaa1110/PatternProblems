@@ -7,7 +7,7 @@ void print(int n, int console_width, int console_height)
 
     // Calculate vertical and horizontal spacing to center the line
     int vertical_spaces = (console_height - n) / 2;
-    int horizontal_spaces = (console_width) / 2;
+    int horizontal_spaces = (console_width-1) / 2;
 
     // Print empty lines to move the line vertically to center
     for (int i = 0; i < vertical_spaces; i++)
