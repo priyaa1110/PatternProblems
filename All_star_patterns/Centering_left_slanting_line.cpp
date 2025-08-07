@@ -7,6 +7,12 @@ using namespace std;
 // Function to print a centered left slanting line (diagonal from top-left to bottom-right)
 void print(int  n, int console_width, int console_height)
 {
+     if (n > console_width || n > console_height)
+    {
+        cout << "Line too long for console!" << endl;
+        return ;
+    }
+
     int vertical_spaces =(console_height-n)/2;
     int horizontal_spaces = (console_width-1)/2;
 

@@ -8,6 +8,12 @@ void print(int n, int console_width, int console_height)
 {
     int mid = n / 2; // Middle index for both rows and columns
 
+     if (n > console_width || n > console_height)
+    {
+        cout << "Line too long for console!" << endl;
+        return ;
+    }
+
     int vertical_spaces = (console_height - n) / 2; // Blank lines before the pattern (to center vertically)
 
     int horizontal_spaces = (console_width - n) / 2; // Spaces before each line (to center horizontally)

@@ -4,6 +4,12 @@ using namespace std;
 // Function to print the centered hollow vertical line
 void print(int n, int console_width, int console_height)
 {
+     if (n > console_width || n > console_height)
+    {
+        cout << "Line too long for console!" << endl;
+        return ;
+    }
+
 
     // Calculate vertical and horizontal spacing to center the line
     int vertical_spaces = (console_height - n) / 2;

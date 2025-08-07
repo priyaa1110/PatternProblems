@@ -21,6 +21,13 @@ int main()
     int console_width = 80;
     int console_height = 24;
 
+     if (n > console_width || n > console_height)
+    {
+        cout << "Line too long for console!" << endl;
+        return 1;
+    }
+
+
     // Calculate vertical and horizontal spaces to center the line
     int vertical_spaces = (console_height - n) / 2;
     int horizontal_spaces = (console_width-1) / 2;
