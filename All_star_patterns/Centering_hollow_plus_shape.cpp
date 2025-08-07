@@ -1,4 +1,4 @@
-//Code for centering a plus shape of any odd size using * symbol
+// Code for centering a hollow plus shape of any odd size using * symbol
 
 #include <iostream>
 using namespace std;
@@ -12,41 +12,40 @@ void print(int n, int console_width, int console_height)
 
     int horizontal_spaces = (console_width - n) / 2; // Spaces before each line (to center horizontally)
 
+    // Print blank lines to push pattern vertically to the center
+    for (int j = 0; j < vertical_spaces; j++)
     {
-        // Print blank lines to push pattern vertically to the center
-        for (int j = 0; j < vertical_spaces; j++)
+        cout << endl;
+    }
+
+    // Print each row of the pattern
+    for (int i = 0; i < n; i++)
+    {
+        // Print spaces before the pattern to center it horizontally
+        for (int j = 0; j < horizontal_spaces; j++)
         {
-            cout << endl;
+            cout << " ";
         }
 
-        // Print each row of the pattern
-        for (int i = 0; i < n; i++)
+        // Print characters in each column
+        for (int j = 0; j < n; j++)
         {
-            // Print spaces before the pattern to center it horizontally
-            for (int j = 0; j < horizontal_spaces; j++)
+
+            // Print '*' if on middle row or middle column, excluding the center point
+            if ((i == mid || j == mid) && !(i == mid && j == mid))
             {
-                cout << " ";
+                cout << "*";
             }
-
-            // Print characters in each column
-            for (int j = 0; j < n; j++)
+            else
             {
-
-                // Print '*' if it's in the middle row or middle column
-                if (i == mid || j == mid)
-                {
-                    cout << "*";
-                }
-                else
-                {
-                    cout << " "; // Otherwise, print space
-                }
+                cout << " "; // Otherwise, print space
             }
-
-            cout << endl; // Move to the next line after finishing a row
         }
+
+        cout << endl; // Move to the next line after finishing a row
     }
 }
+
 int main()
 {
     int n;
@@ -75,7 +74,7 @@ Enter the odd size : 5
 
              *
              *
-           *****
+           ** **
              *
              *
 
