@@ -1,32 +1,27 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  margin: 20px;
-  background: #f0f0f0;
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
 }
 
-h1 {
-  color: #333;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 #patternAnimation {
   font-family: monospace;
+  font-size: 18px;
   white-space: pre;
-  margin-top: 20px;
-  background: white;
-  padding: 15px;
-  display: inline-block;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  background-color: #f9f9f9;
 }
 
-#codeDisplay {
-  text-align: left;
-  margin: 20px auto;
-  width: 80%;
-  background: #272822;
-  color: #f8f8f2;
-  padding: 15px;
-  border-radius: 8px;
+#codeDisplay pre {
+  background-color: #e6e6e6;
+  padding: 10px;
+  font-family: monospace;
   overflow-x: auto;
 }

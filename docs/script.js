@@ -45,7 +45,6 @@ function showPattern() {
     return;
   }
 
-  // Animate the pattern
   let index = 0;
   let currentLine = "";
 
@@ -55,23 +54,27 @@ function showPattern() {
       if (char === "\n") {
         const lineElem = document.createElement("div");
         lineElem.textContent = currentLine;
+        lineElem.classList.add("fade-in"); // apply animation
         animationDiv.appendChild(lineElem);
         currentLine = "";
       } else {
         currentLine += char;
       }
       index++;
-      setTimeout(animate, 20); // speed of animation
+      setTimeout(animate, 20); // speed control
     } else {
-      // add last line if any
+      // add last line if needed
       if (currentLine.length > 0) {
         const lineElem = document.createElement("div");
         lineElem.textContent = currentLine;
+        lineElem.classList.add("fade-in");
         animationDiv.appendChild(lineElem);
       }
     }
   }
 
   animate();
-  codeDiv.textContent = selected.code;
+
+  // Show code (formatted nicely)
+  codeDiv.innerHTML = `<pre>${selected.code}</pre>`;
 }
