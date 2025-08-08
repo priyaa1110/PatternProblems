@@ -4,7 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pattern Generator and Visualizer</title>
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    label, select, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+    #patternAnimation {
+      margin-top: 30px;
+      white-space: pre;
+      font-family: monospace;
+      text-align: left;
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    pre#codeDisplay {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Pattern Generator & Visualizer</h1>
@@ -24,7 +57,7 @@
   <button onclick="showPattern()">Show Pattern</button>
   
   <div id="patternAnimation"></div>
-  <pre id="codeDisplay"></pre>
+  <pre id="codeDisplay">// Code will appear here...</pre>
 
   <script src="script.js"></script>
 </body>
